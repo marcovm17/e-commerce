@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --red: #eb4a5a;
+    --white: #f9fafc;
+    --light_grey: #f6f3f3;
+    --grey: #434343;
+    --blue: #274671;
+}
+body {
+    font-family: 'Roboto Slab', sans-serif;
+}
+/** Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--light_grey);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.nav__img {
+    height: 55px;
+}
+.nav__button {
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--grey);
+    transition: 0.5s;
+}
+.nav__button:hover {
+    transform: scale(1.3);
+    color: var(--red);
+}
+
+/** Desplegable carrito */
+.nav__car {
+    background-color: var(--light_grey);
+    height: 90vh;
+    width: 40%;
+    position: fixed;
+    top: 65px;
+    overflow-y: scroll;
+    transition: 0.5s;
+    box-shadow: 5px 10px 20px 0px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav__car__counter {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    position: absolute;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/** carrito */
+.car__product {
+    max-width: 300px;
+    margin: 30px 0;
+}
+
+/**header */
+header {
+    height: 300px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__img {
+    height: 200px;
+}
+/* main */
+.main__h3 {
+    margin: 40px;
+    font-size: 26px;
+    color: var(--grey);
+    font-weight: 500;
+}
+.main__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px 40px;
+}
+.products__element {
+    max-width:  300px;
+}
+.products__img {
+    max-width: 290px;
+}
+/** Footer */
+.footer {
+    min-height: 200px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__p {
+    color: var(--white);
+    font-size: 17px;
+}
